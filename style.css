@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+
+}
+
+.main{
+	font-family: 'Lato',sans-serief;
+	height:100vh;
+	width:100vw;
+	background-color: white;#dce1e9;
+	display:grid;
+	place-content:center;
+}
+.music-container{
+    width:20rem;
+    height:32rem;
+    background:linear-gradient(#e66465, #9198e5);
+    border-radius:4px;
+    padding:30px;
+    box-shadow: 1px 2px 20px #3d2173;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.music-container #song-name{
+	font-size:25px;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	margin:0.9rem;
+
+}
+.music-container #artist-name{
+   font-size:18px;
+   margin-bottom:0.7rem;
+   text-transform: capitalize;
+}
+
+.img-container{
+   
+   margin-bottom: 10%;
+   margin-top:5%;
+   width:14rem;
+   height:14rem;
+  object-fit: cover;
+}
+.img-container img{
+	height:100%;
+	width:100%;
+	border-radius:50%;
+	 box-shadow: 1px 2px 15px #ffffff; #dce1e9;
+	 transition: 0.7s;
+	 
+}
+.img-container img:hover{
+ transform:scale(1.1);
+}
+
+.btn-container{
+	width:13rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding:5px;
+	margin-top:7%;
+
+}
+.btn-container #play{
+	color:black;
+	font-size: 2rem;
+	
+
+}
+.btn-container i{
+	cursor: pointer;
+}
+.rotateimg{
+	animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
